@@ -9,11 +9,11 @@
 
 <body>
     <div class="form">
-        <div class="formulaire">
-            <form action="">
+        <form id="myForm" action="">
             <label for="name">Pokémon Name</label>
             <input type="text" name="name" id="name">
-            <label for="type">Pokémon type</label>
+
+            <label for="type">Pokémon type 1</label>
             <select name="type" id="pokemon-type">
                 <option value="">--Choose a type--</option>
                 <option value="normal">Normal</option>
@@ -39,7 +39,7 @@
                 <option value="none">None</option>
             </select>
 
-            <label for="type2">Pokémon Type</label>
+            <label for="type2">Pokémon Type 2</label>
             <select name="type2" id="type2">
                 <option value="">--Choose a type--</option>
                 <option value="normal">Normal</option>
@@ -64,6 +64,7 @@
                 <option value="???">???</option>
                 <option value="none">None</option>
             </select>
+
             <label for="img-pokemon">Image of the Pokémon</label>
             <input type="url" name="img-pokemon" id="img-pokemon" placeholder="https://exemple.com">
             <label for="generation">Pokémon Generation</label>
@@ -73,8 +74,13 @@
             <label for="weight">Pokémon Weight</label>
             <input type="text" name="weight" id="weight">
 
+            <button type="submit">Submit</button>
+            <button type="button">Reset</button>
+
+
+
         </form>
-        </div>
+
 
     </div>
 </body>
