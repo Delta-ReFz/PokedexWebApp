@@ -33,4 +33,41 @@
     padding: 8px;
     border: 1px solid;
     border-radius: 4px;
+    margin: 5px;
 }
+
+.form-actions {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:20px;
+}
+
+.form-actions .link {
+
+    color: red;
+    text-decoration: none;
+    padding: 8px 12px;
+    border: 1px solid;
+    border-radius: 4px;
+    background-color: aqua;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.form-actions .button {
+
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 30px;
+    color: red;
+    font-size: 16px;
+    background-color: lightgreen;
+    font-weight: bold;
+}
+
+
+
+
