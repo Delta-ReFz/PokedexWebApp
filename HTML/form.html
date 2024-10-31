@@ -4,75 +4,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Document</title>
 </head>
 
-<body>
-    <div class="form">
-        <form id="myForm" action="">
-            <label for="name">Pokémon Name</label>
-            <input type="text" name="name" id="name">
+<body class="form-body">
+    <div class="form-container">
+        <form id="myForm">
+            <div class="form-group">
+                <label for="name">Pokémon Name</label>
+                <input type="text" name="name" id="name">
+            </div>
 
-            <label for="type">Pokémon type 1</label>
-            <select name="type" id="pokemon-type">
-                <option value="">--Choose a type--</option>
-                <option value="normal">Normal</option>
-                <option value="fighting">Fighting</option>
-                <option value="flying">Flying</option>
-                <option value="poison">Poison</option>
-                <option value="ground">Ground</option>
-                <option value="rock">Rock</option>
-                <option value="bug">Bug</option>
-                <option value="ghost">Ghost</option>
-                <option value="steel">Steel</option>
-                <option value="stellar">Stellar</option>
-                <option value="fire">Fire</option>
-                <option value="water">Water</option>
-                <option value="grass">Grass</option>
-                <option value="electric">Electric</option>
-                <option value="psychic">Psychic</option>
-                <option value="ice">Ice</option>
-                <option value="dragon">Dragon</option>
-                <option value="dark">Dark</option>
-                <option value="fairy">Fairy</option>
-                <option value="???">???</option>
-                <option value="none">None</option>
-            </select>
+            <div class="form-group">
+                <label for="type">Pokémon type 1</label>
+                <select name="type" id="type">
+                    <option value="">--Choose a type--</option>
+                    <option value="normal">Normal</option>
+                    <option value="fighting">Fighting</option>
+                    <option value="flying">Flying</option>
+                    <option value="poison">Poison</option>
+                    <option value="ground">Ground</option>
+                    <option value="rock">Rock</option>
+                    <option value="bug">Bug</option>
+                    <option value="ghost">Ghost</option>
+                    <option value="steel">Steel</option>
+                    <option value="stellar">Stellar</option>
+                    <option value="fire">Fire</option>
+                    <option value="water">Water</option>
+                    <option value="grass">Grass</option>
+                    <option value="electric">Electric</option>
+                    <option value="psychic">Psychic</option>
+                    <option value="ice">Ice</option>
+                    <option value="dragon">Dragon</option>
+                    <option value="dark">Dark</option>
+                    <option value="fairy">Fairy</option>
+                    <option value="???">???</option>
+                    <option value="none">None</option>
+                </select>
+            </div>
 
-            <label for="type2">Pokémon Type 2</label>
-            <select name="type2" id="type2">
-                <option value="">--Choose a type--</option>
-                <option value="normal">Normal</option>
-                <option value="fighting">Fighting</option>
-                <option value="flying">Flying</option>
-                <option value="poison">Poison</option>
-                <option value="ground">Ground</option>
-                <option value="rock">Rock</option>
-                <option value="bug">Bug</option>
-                <option value="ghost">Ghost</option>
-                <option value="steel">Steel</option>
-                <option value="stellar">Stellar</option>
-                <option value="fire">Fire</option>
-                <option value="water">Water</option>
-                <option value="grass">Grass</option>
-                <option value="electric">Electric</option>
-                <option value="psychic">Psychic</option>
-                <option value="ice">Ice</option>
-                <option value="dragon">Dragon</option>
-                <option value="dark">Dark</option>
-                <option value="fairy">Fairy</option>
-                <option value="???">???</option>
-                <option value="none">None</option>
-            </select>
+            <div class="form-group">
+                <label for="type2">Pokémon Type 2</label>
+                <select name="type2" id="type2">
+                    <option value="">--Choose a type--</option>
+                    <option value="normal">Normal</option>
+                    <option value="fighting">Fighting</option>
+                    <option value="flying">Flying</option>
+                    <option value="poison">Poison</option>
+                    <option value="ground">Ground</option>
+                    <option value="rock">Rock</option>
+                    <option value="bug">Bug</option>
+                    <option value="ghost">Ghost</option>
+                    <option value="steel">Steel</option>
+                    <option value="stellar">Stellar</option>
+                    <option value="fire">Fire</option>
+                    <option value="water">Water</option>
+                    <option value="grass">Grass</option>
+                    <option value="electric">Electric</option>
+                    <option value="psychic">Psychic</option>
+                    <option value="ice">Ice</option>
+                    <option value="dragon">Dragon</option>
+                    <option value="dark">Dark</option>
+                    <option value="fairy">Fairy</option>
+                    <option value="???">???</option>
+                    <option value="none">None</option>
+                </select>
+            </div>
 
-            <label for="img-pokemon">Image of the Pokémon</label>
-            <input type="url" name="img-pokemon" id="img-pokemon" placeholder="https://exemple.com">
-            <label for="generation">Pokémon Generation</label>
-            <input type="number" name="generation" id="generation">
-            <label for="height">Pokémon Height</label>
-            <input type="text" name="height" id="height">
-            <label for="weight">Pokémon Weight</label>
-            <input type="text" name="weight" id="weight">
+
+            <div class="form-group">
+                <label for="img-pokemon">Image of the Pokémon</label>
+                <input type="url" name="img-pokemon" id="img-pokemon" placeholder="https://exemple.com">
+            </div>
+
+            <div class="form-group">
+                <label for="generation">Pokémon Generation</label>
+                <input type="number" name="generation" id="generation">
+            </div>
+
+            <div class="form-group">
+                <label for="height">Pokémon Height</label>
+                <input type="text" name="height" id="height">
+            </div>
+
+            <div class="form-group">
+                <label for="weight">Pokémon Weight</label>
+                <input type="text" name="weight" id="weight">
+            </div>
 
             <button type="submit">Submit</button>
             <button type="button">Reset</button>
@@ -81,6 +100,7 @@
 
         </form>
 
+        <a href="index.html">link to index</a>
 
     </div>
 </body>

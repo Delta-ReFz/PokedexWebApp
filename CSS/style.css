@@ -1,0 +1,36 @@
+.form-body{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.form-container {
+
+    padding: 20px;
+    border: 1px solid red;
+    display: grid;
+    gap: 10px;
+    width: 100vh;
+}
+
+.form-group {
+
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+
+.form-group label {
+
+    font-weight: bold;
+}
+
+.form-group input, select {
+
+    padding: 8px;
+    border: 1px solid;
+    border-radius: 4px;
+}
