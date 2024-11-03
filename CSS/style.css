@@ -1,3 +1,56 @@
+.pokemon-body {
+
+    display:flex;
+    justify-content: center;
+    background-color: white;
+    padding-top: 40px;
+}
+
+.pokemon-container .pokemon-card {
+
+    border: 1px solid black;
+    box-shadow: black;
+    padding: 20px 20px;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 5px 0px black;
+}
+
+.pokemon-container .pokemon-card .pokemon-picture {
+
+    border: 1px solid black;
+    box-shadow: 0px 4px 4px 2px gold;
+    border-radius: 100px;
+    width: 40vh;
+    height: 40vh;
+}
+
+.pokemon-container  .card-title , .pokemon-name {
+
+    font-style: italic;
+}
+
+.pokemon-body .link {
+
+    color: red;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 8px 12px;
+    background-color: gold;
+    position:fixed;
+    top: 0;
+    left: 0;
+    margin: 10px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.pokemon-body .link:hover {
+
+    background-color: goldenrod;
+}
+
+
 .form-body {
     display: flex;
     justify-content: center;
@@ -63,6 +116,7 @@ select:focus {
     text-align: center;
     margin-right: 10px;
     transition: background-color 0.3s; 
+    font-size: 16px;
 }
 
 .form-actions .link:hover {
