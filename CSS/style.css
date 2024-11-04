@@ -1,3 +1,30 @@
+.index-container {
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;   
+}
+
+.index-container .pokemon-list {
+
+   display: flex;
+   flex-direction: row; 
+}
+
+.index-container .pokemon-card {
+
+    border: 1px solid black;
+    box-shadow: 0px 5px 15px 10px rgba(0, 0, 0, 0.9);
+}
+
+.index-container .pokemon-picture {
+
+    width: 20vh;
+    height: 20vh;
+}
+
+
+
+
 body.pokemon-body {
     display: flex;
     justify-content: center; /* Center horizontally */
@@ -20,7 +47,7 @@ body.pokemon-body {
 .pokemon-container .pokemon-card {
     border: 2px solid #333;
     background: linear-gradient(to bottom right, #ff8c00, #d147ff, #3399ff);
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 5px 15px 10px rgba(0, 0, 0, 0.9);
     padding: 20px 10vh;
     margin: 20px;
     border-radius: 20px;
