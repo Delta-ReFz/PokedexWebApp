@@ -1,19 +1,30 @@
 .index-container {
 
     display: grid;
-    grid-template-columns: 1fr 2fr;   
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;  
+    background-color: #f8f8f8; 
+    padding: 20px;
+    border-radius: 10px;
 }
+
 
 .index-container .pokemon-list {
 
    display: flex;
    flex-direction: row; 
+   flex-wrap: wrap;
+   gap: 20px;
 }
 
 .index-container .pokemon-card {
 
-    border: 1px solid black;
-    box-shadow: 0px 5px 15px 10px rgba(0, 0, 0, 0.9);
+    border: 2px solid #ffcb05;
+    background: linear-gradient(to bottom right, #ff8c00, #d147ff, #3399ff);
+    box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.5);
+    list-style-type: none;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .index-container .pokemon-picture {
@@ -22,13 +33,37 @@
     height: 20vh;
 }
 
+.index-container .pokemon-card .pokemon-link {
+
+    text-decoration: none;
+    color: red;
+}
+
+.index-container .link {
+
+    background-color: #d147ff;
+    text-decoration: none;
+    border: 1px solid black; 
+    padding: 8px 12px;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    position:fixed;
+    font-size: 16px;
+}
+
+.index-container .type-list, a {
+
+    list-style-type: none;
+    text-decoration: none;
+}
 
 
 
 body.pokemon-body {
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    justify-content: center; 
+    align-items: center; 
     min-height: 100vh; /* Ensures the body takes up the full viewport height */
     background: linear-gradient(to bottom right, #ffcc00, #ff6699); /* Gradient background */
     margin: 0; /* Remove default margin */
@@ -117,12 +152,12 @@ body.pokemon-body {
     padding: 8px 12px;
     background-color: #ff3366;
     position: fixed;
-    top: 10px; /* Adjusted for better spacing */
-    left: 10px; /* Adjusted for better spacing */
+    top: 10px; 
+    left: 10px; 
     border-radius: 4px;
     font-size: 16px;
     transition: background-color 0.3s;
-    z-index: 10; /* Ensure it stays on top of other elements */
+    z-index: 10; 
 }
 
 .pokemon-body .link:hover {
