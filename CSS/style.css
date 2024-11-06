@@ -1,4 +1,5 @@
 .index-container {
+    
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 20px;
@@ -9,23 +10,27 @@
 }
 
 .index-container .types {
+    
     background-color: #333;
     padding: 15px;
     border-radius: 8px;
 }
 
 .index-container .type-title {
+    
     color: #ffcb05;
     text-align: center;
     margin-bottom: 10px;
 }
 
 .index-container .type-list {
+    
     list-style-type: none;
     padding: 0;
 }
 
 .index-container .type-list li a {
+    
     color: #f8f8f8;
     text-decoration: none;
     padding: 5px;
@@ -34,16 +39,19 @@
 }
 
 .index-container .type-list li a:hover {
+    
     color: #ffcb05;
 }
 
 .index-container .pokemon-title {
+    
     color: #ffcb05;
     text-align: center;
     margin-bottom: 20px;
 }
 
 .index-container .pokemon-list {
+   
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -51,6 +59,7 @@
 }
 
 .index-container .pokemon-card {
+    
     background: linear-gradient(to bottom right, #ff8c00, #ffcb05, #d147ff, #3399ff);
     border: 2px solid #ffcb05;
     border-radius: 8px;
@@ -71,11 +80,13 @@
 }
 
 .index-container .pokemon-card:hover {
+   
     transform: translateY(-10px);
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.8);
 }
 
 .index-container .pokemon-picture {
+   
     width: 100%;
     height: 200px;
     object-fit: cover;
@@ -83,6 +94,7 @@
 }
 
 .index-container .pokemon-card .pokemon-link {
+   
     text-decoration: none;
     font-weight: bold;
     font-size: 1.2em;
@@ -92,15 +104,18 @@
 }
 
 .index-container .pokemon-card .pokemon-link:hover {
+    
     color: #ff8c00;
 }
 
 .index-container .pokemon-type, .pokemon-generation {
+    
     margin: 0;
     font-size: 0.9em;
 }
 
 .index-container .link {
+   
     background-color: #ff8c00;
     color: #fff;
     text-decoration: none;
@@ -116,31 +131,35 @@
 }
 
 .index-container .link:hover {
+   
     background-color: #d147ff;
 }
 
 
 
 body.pokemon-body {
+   
     display: flex;
     justify-content: center; 
     align-items: center; 
-    min-height: 100vh; /* Ensures the body takes up the full viewport height */
-    background: linear-gradient(to bottom right, #ffcc00, #ff6699); /* Gradient background */
-    margin: 0; /* Remove default margin */
+    min-height: 100vh; 
+    background: linear-gradient(to bottom right, #ffcc00, #ff6699); 
+    margin: 0; 
     font-family: 'Arial', sans-serif;
     color: #333;
     box-sizing: border-box;
-    padding: 20px; /* Add padding to create space around content */
+    padding: 20px; 
 }
 
 .pokemon-container {
+    
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .pokemon-container .pokemon-card {
+   
     border: 2px solid #333;
     background: linear-gradient(to bottom right, #ff8c00, #d147ff, #3399ff);
     box-shadow: 0px 5px 15px 10px rgba(0, 0, 0, 0.9);
@@ -151,11 +170,13 @@ body.pokemon-body {
 }
 
 .pokemon-container .pokemon-card:hover {
+    
     transform: scale(1.05);
     box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.5);
 }
 
 .pokemon-container .pokemon-picture {
+    
     border: 3px solid #ffcc00;
     box-shadow: 0px 4px 4px 2px rgba(255, 204, 0, 0.7);
     border-radius: 20px;
@@ -166,21 +187,23 @@ body.pokemon-body {
 }
 
 .pokemon-container .card-title {
-    font-size: 2.2rem; /* Slightly large but not overwhelming */
-    font-weight: 700; /* Bold but not too heavy */
-    color: #222; /* Darker shade for readability */
+   
+    font-size: 2.2rem; 
+    font-weight: 700;
+    color: #222; 
 }
 
 .pokemon-container .pokemon-name {
-    font-size: 1.6rem; /* Proportional size to the title */
-   
-    color: #222; /* Soft dark color */
-    letter-spacing: 1px; /* Slight spacing for a cleaner look */
+    
+    font-size: 1.6rem; 
+    color: #222; 
+    letter-spacing: 1px; 
     text-align: center;
 
 }
 
 .pokemon-container .card-stats {
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -189,6 +212,7 @@ body.pokemon-body {
 }
 
 .pokemon-container .card-stats p {
+   
     margin: 8px 0;
     padding: 8px 16px;
     color: black;
@@ -202,11 +226,13 @@ body.pokemon-body {
 }
 
 .pokemon-container .card-stats p:hover {
-    transform: translateY(-3px); /* Lift effect on hover */
+    
+    transform: translateY(-3px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
 .pokemon-body .link {
+    
     color: #fff;
     text-decoration: none;
     border: 1px solid #333;
@@ -222,23 +248,24 @@ body.pokemon-body {
 }
 
 .pokemon-body .link:hover {
+    
     background-color: #ff6699;
 }
 
-/* Media Query for Smaller Screens */
+
 @media (max-width: 600px) {
     body.pokemon-body {
-        padding: 20px; /* Reduce padding on smaller screens */
+        padding: 20px; 
     }
 
     .pokemon-container .pokemon-picture {
-        width: 27vh; /* Reduce image size on smaller screens */
+        width: 27vh; 
         height: 27vh;
     }
 }
 
-
 .form-body {
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -248,6 +275,7 @@ body.pokemon-body {
 }
 
 .form-container {
+   
     padding: 20px;
     border: 2px solid #0056b3; 
     background-color: #fff; 
@@ -260,17 +288,20 @@ body.pokemon-body {
 }
 
 .form-group {
+    
     display: grid;
     grid-template-columns: 1fr 2fr;
     align-items: center;
 }
 
 .form-group label {
+   
     font-weight: bold;
     color: #0056b3; 
 }
 
 .form-group input,select {
+    
     padding: 8px;
     border: 2px solid #0056b3; 
     border-radius: 4px;
@@ -280,11 +311,13 @@ body.pokemon-body {
 
 .form-group input:focus,
 select:focus {
+   
     border-color: #ffcc00; 
     outline: none; 
 }
 
 .form-actions {
+   
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -293,6 +326,7 @@ select:focus {
 }
 
 .form-actions .link {
+    
     color: #ff0000; 
     text-decoration: none;
     padding: 8px 12px;
@@ -307,10 +341,12 @@ select:focus {
 }
 
 .form-actions .link:hover {
+    
     background-color: #ff9900; 
 }
 
 .form-actions .button {
+    
     padding: 8px 12px;
     border-radius: 4px;
     cursor: pointer;
@@ -324,6 +360,7 @@ select:focus {
 }
 
 .form-actions .button:hover {
+    
     background-color: #003d80; 
 }
 
