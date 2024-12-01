@@ -370,11 +370,17 @@ select:focus {
     outline: 3px solid #ffcc00;
 }
 
-.form-group .invalid {
-    border-color: red;
-    background-color: #ffcccc;
+.form-group input.invalid,
+.form-group select.invalid {
+  
+    border: 2px solid red; /* Bordure rouge */
+    background-color: white; /* Conserve le fond blanc */
+    transition: border-color 0.3s;
+    
 }
 
 .form-group input:focus, select:focus {
-    box-shadow: 0 0 5px #ffcc00; 
+    border-color: darkred; /* Bordure rouge foncé */
+    outline: none;
 }
+

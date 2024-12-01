@@ -22,59 +22,36 @@ const handleSubmit = (submit) => {
 
     submit.preventDefault();
 
-    const userName = document.querySelector('.name');
-    const userType = document.querySelector('.type');
-    const userType2 = document.querySelector('.type2');
-    const userImg = document.querySelector('.img-pokemon');
-    const userGeneration = document.querySelector('.generation');
-    const userHeight = document.querySelector('.height');
-    const userWeight = document.querySelector('.weight');
+    const inputs = [
+        document.querySelector('.name'),
+        document.querySelector('.type'),
+        document.querySelector('.type2'),
+        document.querySelector('.img-pokemon'),
+        document.querySelector('.generation'),
+        document.querySelector('.height'),
+        document.querySelector('.weight')
+    ];
 
-    userName.classList.remove('invalid');
-    userType.classList.remove('invalid');
-    userType2.classList.remove('invalid');
-    userImg.classList.remove('invalid');
-    userGeneration.classList.remove('invalid');
-    userHeight.classList.remove('invalid');
-    userWeight.classList.remove('invalid');
+    
+    inputs.forEach(input => input.classList.remove('invalid'));
+    
+    let isValid = true;
 
-    if (!userName.value) {
-        userName.classList.add('invalid');
+    inputs.forEach(input => {
+        if (!input.value.trim()) {
+            
+            input.classList.add('invalid');
+            isValid = false;
+        }
+    });
+
+    if (!isValid) {
+        alert('Veuillez remplir tous les champs.');
+    } else {
+        alert('Formulaire soumis avec succès');
     }
+};
 
-    if (!userType.value) {
-        userType.classList.add('invalid');
-    }
-
-    if (!userType2.value) {
-        userType2.classList.add('invalid');
-    }
-
-    if (!userImg.value) {
-        userImg.classList.add('invalid');
-    }
-
-    if (!userGeneration.value) {
-        userGeneration.classList.add('invalid');
-    }
-
-    if (!userHeight.value) {
-        userHeight.classList.add('invalid');
-    }
-
-    if (!userWeight.value) {
-        userWeight.classList.add('invalid');
-    }
-
-    if(!userName.value || !userType.value || !userType2.value || !userImg.value || !userGeneration.value
-        || !userHeight.value || !userWeight.value) {
-            alert('Veuillez remplir tout les champs');
-    }
-    else {
-        alert('Formulaire soumis avec succès')
-    }
-
-}
 
 buttonSubmit.addEventListener('click', handleSubmit);
 
