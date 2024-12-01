@@ -345,7 +345,7 @@ select:focus {
     background-color: #ff9900; 
 }
 
-.form-actions .button {
+.form-actions .button-reset, .button-submit {
     
     padding: 8px 12px;
     border-radius: 4px;
@@ -359,8 +359,22 @@ select:focus {
     transition: background-color 0.3s; 
 }
 
-.form-actions .button:hover {
+.form-actions .button-reset, .button-submit:hover {
     
     background-color: #003d80; 
 }
 
+.form-actions .link:focus,
+.form-actions .button-reset:focus,
+.form-actions .button-submit:focus {
+    outline: 3px solid #ffcc00;
+}
+
+.form-group .invalid {
+    border-color: red;
+    background-color: #ffcccc;
+}
+
+.form-group input:focus, select:focus {
+    box-shadow: 0 0 5px #ffcc00; 
+}
