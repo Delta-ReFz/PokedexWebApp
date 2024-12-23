@@ -81,9 +81,21 @@ const pokemons = [
     }
 ];
 
+function getFilteredPokemons() {
+    const selectedType = new URLSearchParams(window.location.search).get("type");
+
+    if (!selectedType) return pokemons;
+
+    return pokemons.filter(pokemon =>
+        pokemon.Type1.toLowerCase() === selectedType.toLowerCase() ||
+        pokemon.Type2.toLowerCase() === selectedType.toLowerCase()
+    );
+}
+
+const filteredPokemons = getFilteredPokemons();
 let productsHTML = '';
 
-pokemons.forEach((pokemon) => {
+filteredPokemons.forEach((pokemon) => {
     productsHTML += `
                 <li class="pokemon-card">
                     <img class="pokemon-picture" src="${pokemon.image}"
