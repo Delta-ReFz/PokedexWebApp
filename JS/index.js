@@ -93,10 +93,12 @@ function getFilteredPokemons() {
 }
 
 const filteredPokemons = getFilteredPokemons();
-let productsHTML = '';
+let pokemonHTML = '';
 
 filteredPokemons.forEach((pokemon) => {
-    productsHTML += `
+
+
+    pokemonHTML += `
                 <li class="pokemon-card">
                     <img class="pokemon-picture" src="${pokemon.image}"
                         alt="Image de Bulbasaur">
@@ -107,7 +109,7 @@ filteredPokemons.forEach((pokemon) => {
             `;
 });
 
-document.querySelector('.pokemon-list').innerHTML = productsHTML;
+document.querySelector('.pokemon-list').innerHTML = pokemonHTML;
 
 
 
